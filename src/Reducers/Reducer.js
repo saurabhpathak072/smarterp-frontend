@@ -11,8 +11,6 @@ export const reducers =(state,action)=>{
             search:action.payload
         }
         case(actionType.POST_DATA):
-       
-        console.log("Post Data",action.payload);
         return{
             ...state,
             posts:state.posts.concat(action.payload)

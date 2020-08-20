@@ -8,7 +8,6 @@ function NewPost(props) {
     const [post, setpost] = useState('');
     const[isalert,setisalert]=useState(false);
     const value=useContext(globalContext);
-     console.log('[newPost]value',value);
     const updatepostHandler=(e)=>{
         setpost(e.target.value);
     }
@@ -28,7 +27,6 @@ function NewPost(props) {
         }
         else{
        const id=Math.random();
-       console.log("new post",post);
           value.add({id:id,title,post});
         }
         

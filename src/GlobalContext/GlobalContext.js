@@ -13,12 +13,10 @@ function GlobalContext(props) {
     const [state, dispatch] = useReducer(reducers, initialState)
     useEffect(() => {
         Axios.get('https://post-71f65.firebaseio.com/post/post/post.json')
-        .then(res=>{console.log("Initial post",res.data);dispatch({type:actionType.INITIALIZE_POSTS,payload:res.data})})
+        .then(res=>{dispatch({type:actionType.INITIALIZE_POSTS,payload:res.data})})
         .catch(err=>console.log(err))
     }, [])
-    const postData =async (post)=>{
-         console.log("aync pos",post);
-        
+    const postData =async (post)=>{        
          const upost=[...state.posts];
          const upost1=upost.concat({id:post.id,
             title:post.title,
@@ -33,7 +31,6 @@ function GlobalContext(props) {
         
     }
     const searchPost=(title)=>{
-        console.log("title",title);
         dispatch({type:actionType.SEARCH_POST,title:title})
     }
     const updatesearch =(a)=>{

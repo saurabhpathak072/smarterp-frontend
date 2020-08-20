@@ -21,7 +21,6 @@ const SearchBox=()=>{
     }
     const clearSearch = async ()=>{
         await setsearchTitle(null);
-        await console.log("title",searchTitle);
         value.usearch(false)
     } 
     return(
