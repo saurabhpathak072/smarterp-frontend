@@ -6,8 +6,8 @@
     width: 50%;
     text-align: center;
     border-left: 2px double black;
-    height: 80vh;
-    overflow: auto;
+    
+   
 }
 
 .postparts h2:hover{

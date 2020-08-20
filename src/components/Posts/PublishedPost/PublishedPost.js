@@ -1,6 +1,7 @@
 import React,{useContext} from 'react'
 import {globalContext} from '../../../GlobalContext/GlobalContext';
 import Loader from '../../Loader/Loader'
+import classes from './PublishedPost.module.css';
 
 function PublishedPost() {
     const value=useContext(globalContext);
@@ -13,7 +14,7 @@ function PublishedPost() {
             
             publishposts=value.searchpost.map(publishpost=>{
                 return(
-                    <div key={publishpost.id}>
+                    <div  key={publishpost.id}>
                         <div>
                         <label><h3>Title</h3></label>
                             <div>{publishpost.title}</div>
@@ -47,7 +48,7 @@ function PublishedPost() {
     }
     }
     return (
-        <div>
+        <div className={classes.published}>
             {publishposts}
         </div>
     )
