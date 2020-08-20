@@ -14,7 +14,11 @@
     cursor: pointer;
 }
 .label{
-    width: 20%;
+    display: inline-block;
+    width: 50%;
+    float: left;
+    margin: 10px;
+    padding: 1px;
 }
 .markdown{
     width: 100%;

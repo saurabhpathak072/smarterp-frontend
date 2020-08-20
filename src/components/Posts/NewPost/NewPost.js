@@ -36,7 +36,9 @@ function NewPost(props) {
 
             <form>
                 <div>
-                <label className={classes.label}>Title</label>
+                    <div className={classes.label}>
+                        <label >Title</label>
+                    </div>
                 <input
                  type="text"
                  placeholder="title"
@@ -46,7 +48,9 @@ function NewPost(props) {
                 </div>
                 {isalert && title ?<p>Pleae enter fileld</p>:null}
                 <div>
-                    <label className={classes.label}>Post</label>
+                <div className={classes.label}>
+                        <label>Post</label>
+                    </div>
                     <textarea
                     required
                      onChange={updatepostHandler}

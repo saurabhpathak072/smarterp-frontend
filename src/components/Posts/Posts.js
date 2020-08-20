@@ -2,6 +2,8 @@ import React,{useContext,useState} from 'react'
 import NewPost from './NewPost/NewPost';
 import classes from './Posts.module.css';
 import PublishedPost from '../Posts/PublishedPost/PublishedPost';
+import Loader from '../Loader/Loader';
+
 
 function Posts() {
     const [showNewPost, setshowNewPost] = useState(false);
@@ -19,6 +21,7 @@ function Posts() {
                 <h2>PUBLISHED POSTS</h2>
                 <PublishedPost/>
             </div>
+          
         </div>
     )
 }

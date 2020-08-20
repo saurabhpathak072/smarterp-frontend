@@ -1,14 +1,14 @@
 import React,{useContext} from 'react'
 import {globalContext} from '../../../GlobalContext/GlobalContext';
+import Loader from '../../Loader/Loader'
 
 function PublishedPost() {
     const value=useContext(globalContext);
-    let publishposts;
+    let publishposts=<Loader/>;
     if(!value.post){
-        publishposts=(<p>Publish Post...</p>)
+        publishposts=<Loader/>
     }
     else{
-        console.log("[publish] search",value.issearch);
         if(value.issearch){
             
             publishposts=value.searchpost.map(publishpost=>{
@@ -29,7 +29,6 @@ function PublishedPost() {
 
         }
         else{
-            console.log("[publish] post",value.issearch)
         publishposts=value.post.map(publishpost=>{
             return(
                 <div key={publishpost.id}>
