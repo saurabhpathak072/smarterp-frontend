@@ -29,7 +29,7 @@ const SearchBox=()=>{
                 <button
                  type="button"
                  value={searchTitle}
-                 onClick={searchPost}><i class="fas fa-search"></i></button>   
+                 onClick={searchPost}><i className="fas fa-search"></i></button>   
                 <input
                 onChange={updateSearchTitle}
                 style={{height:'50px'}}
@@ -40,7 +40,7 @@ const SearchBox=()=>{
                  />
                  <button
                   type="button"
-                  onClick={clearSearch}><i class="far fa-times-circle"></i></button>
+                  onClick={clearSearch}><i className="far fa-times-circle"></i></button>
                  </div>
                  <hr/>
             </div>

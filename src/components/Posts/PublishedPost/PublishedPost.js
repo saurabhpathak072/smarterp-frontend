@@ -5,6 +5,7 @@ import classes from './PublishedPost.module.css';
 
 function PublishedPost() {
     const value=useContext(globalContext);
+    console.log(value);
     let publishposts=<Loader/>;
     if(!value.post){
         publishposts=<Loader/>
