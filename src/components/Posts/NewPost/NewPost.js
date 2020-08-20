@@ -41,6 +41,7 @@ function NewPost(props) {
                     </div>
                 <input
                  type="text"
+                 className={classes.inputarea}
                  placeholder="title"
                  required
                  onChange={updateTitleHandler}
@@ -52,6 +53,7 @@ function NewPost(props) {
                         <label>Post</label>
                     </div>
                     <textarea
+                    className={classes.inputarea}
                     required
                      onChange={updatepostHandler}
                       value={post}
