@@ -1,0 +1,27 @@
+.posts{
+    display: flex;
+
+}
+.postparts{
+    width: 50%;
+    text-align: center;
+    border-left: 2px double black;
+    height: 80vh;
+    overflow: auto;
+}
+
+.postparts h2:hover{
+    color: aqua;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .posts{
+        display: block;
+    }
+    .postparts {
+
+      width: 100%;
+    }
+  }

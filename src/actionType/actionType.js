@@ -1,0 +1,4 @@
+export const INITIALIZE_POSTS="INITIALIZE_POSTS";
+export const POST_DATA="POST_DATA";
+export const SEARCH_POST="SEARCH_POST";
+export const IS_SEARCH="IS_SEARCH";
